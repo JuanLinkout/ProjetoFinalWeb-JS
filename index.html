@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho Final</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <h1>Noticias</h1>
+        </div>
+        <div class="content-container">
+            <div class="menu">
+                <div class="menu-header">
+                    <h1>Menu</h1>
+                </div>
+                <div class="menu-options">
+                    <div class="menu-item" id="menu-cadastrar">Cadastrar</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-header">
+                    <h1></h1>
+                </div>
+                <div class="content-body">
+                    <form class="hide">
+                        <div class="form-group">
+                            <label for="categoria">Categorias</label>
+                            <select class="form-control" id="categoria">
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="titulo">Titulo da Noticia</label>
+                            <input type="text" class="form-control inputs" id="titulo" placeholder="Titulo">
+                        </div>
+                        <div class="form-group">
+                            <label for="subtitulo">Subtitulo da Noticia</label>
+                            <input type="text" class="form-control inputs" id="subtitulo" placeholder="Subtitulo">
+                        </div>
+                        <div class="form-group">
+                            <label for="descricao">Descrição da Noticia</label>
+                            <textarea class="form-control inputs" id="descricao" rows="3"></textarea>
+                        </div>
+                        <button type="button" id="cadastrar" class="btn btn-primary">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Desenvolvido por Juan Lucas Rossi</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+/* Para o site todo */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Container do app */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Cabeçalho */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #26a69a;
+    min-height: 120px;
+}
+
+/* Conteudo */
+
+.content-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Menu */
+
+.menu {
+    min-width: 300px;
+    background-color: #26a69a;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #34dbcb;
+}
+
+
+.blockquote-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    margin-right: 10px;
+}
+/* Content */
+
+.content {
+    /* background-color: aquamarine; */
+    flex-grow: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.content-body {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.hide {
+    visibility: hidden;
+    max-height: 0px;
+}
+
+.noticia {
+    max-width: calc(100vw - 360px);
+    word-wrap: break-word;
+    padding: 10px;
+    box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.205);
+    margin-top: 15px;
+}
+
+.noticia p {
+    word-wrap: break-word;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #26a69a;
+    min-height: 120px;
+    font-weight: 600;
+}
